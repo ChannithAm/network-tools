@@ -32,18 +32,17 @@
   * ...
   
 
-    Client and server can have multiple simultaneous connections (-P option).
-    Server handles multiple connections, rather than quitting after a single test.
-    Can run for specified time (-t option), rather than a set amount of data to transfer (-n or -k option).
-    Print periodic, intermediate bandwidth, jitter, and loss reports at specified intervals (-i option).
-    Run the server as a daemon (-D option)
-    Use representative streams to test out how link layer compression affects your achievable bandwidth (-F option).
-    A server accepts a single client simultaneously (iPerf3) multiple clients simultaneously (iPerf2)
-    New: Ignore TCP slowstart (-O option).
-    New: Set target bandwidth for UDP and (new) TCP (-b option).
-    New: Set IPv6 flow label (-L option)
-    New: Set congestion control algorithm (-C option)
-    New: Use SCTP rather than TCP (--sctp option)
-    New: Output in JSON format (-J option).
-    New: Disk read test (server: iperf3 -s / client: iperf3 -c testhost -i1 -F filename)
-    New: Disk write tests (server: iperf3 -s -F filename / client: iperf3 -c testhost -i1)
+## <a name="3">៣. ការដំឡើង</a>
+ចំពោះ Ubuntu អ្នកអាចប្រើcommand ដូខាងក្រោមដើម្បីដំឡើងៈ
+```
+sudo apt-get install iperf
+```
+
+## <a name="4">៤. Run test</a>
+* iPerf/iPerf3អាចប្រើ២modes: 
+  * Server mode
+  * Client mode
+
+## <a name="ref">អត្ថបទយោង</a>
+
+[1] iPerf3 https://github.com/esnet/iperf/issues/480
