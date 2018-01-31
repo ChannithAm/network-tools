@@ -43,6 +43,24 @@ sudo apt-get install iperf
   * Server mode
   * Client mode
 
+## <a name="5">៥. ការប្រើប្រាស់</a>
+```
+iperf [-s|-c host] [options]
+#
+iperf [-h|--help] [-v|--version]
+```
+
+* Server mode អាចចាប់ផ្ដើមដោយ -s ឫ --server parameters
+```
+ipfer -s
+```
+or
+```
+iperf --server
+```
+
+
+
 ## <a name="ref">អត្ថបទយោង</a>
 
 [1] iPerf3 https://github.com/esnet/iperf/issues/480
