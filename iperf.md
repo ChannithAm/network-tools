@@ -62,6 +62,51 @@ iperf --server
 
 ចំពោះករណីខាងលើ iPerfស្ដាប់ port 5001 ជាកំណត់។ ហើយយើងអាចកំណត់portបានដោយប្រើប៉ារ៉ាម៉ែត្រ -p ឫ --port។
 
+ប៉ារ៉ាមែត្រៈ
+```
+Client/Server:
+  -f, --format    [kmKM]   format to report: Kbits, Mbits, KBytes, MBytes
+  -i, --interval  #        seconds between periodic bandwidth reports
+  -l, --len       #[KM]    length of buffer to read or write (default 8 KB)
+  -m, --print_mss          print TCP maximum segment size (MTU - TCP/IP header)
+  -o, --output    <filename> output the report or error message to this specified file
+  -p, --port      #        server port to listen on/connect to
+  -u, --udp                use UDP rather than TCP
+  -w, --window    #[KM]    TCP window size (socket buffer size)
+  -B, --bind      <host>   bind to <host>, an interface or multicast address
+  -C, --compatibility      for use with older versions does not sent extra msgs
+  -M, --mss       #        set TCP maximum segment size (MTU - 40 bytes)
+  -N, --nodelay            set TCP no delay, disabling Nagle's Algorithm
+  -V, --IPv6Version        Set the domain to IPv6
+
+Server specific:
+  -s, --server             run in server mode
+  -U, --single_udp         run in single threaded UDP mode
+  -D, --daemon             run the server as a daemon
+
+Client specific:
+  -b, --bandwidth #[KM]    for UDP, bandwidth to send at in bits/sec
+                           (default 1 Mbit/sec, implies -u)
+  -c, --client    <host>   run in client mode, connecting to <host>
+  -d, --dualtest           Do a bidirectional test simultaneously
+  -n, --num       #[KM]    number of bytes to transmit (instead of -t)
+  -r, --tradeoff           Do a bidirectional test individually
+  -t, --time      #        time in seconds to transmit for (default 10 secs)
+  -F, --fileinput <name>   input the data to be transmitted from a file
+  -I, --stdin              input the data to be transmitted from stdin
+  -L, --listenport #       port to receive bidirectional tests back on
+  -P, --parallel  #        number of parallel client threads to run
+  -T, --ttl       #        time-to-live, for multicast (default 1)
+  -Z, --linux-congestion <algo>  set TCP congestion control algorithm (Linux only)
+
+Miscellaneous:
+  -x, --reportexclude [CDMSV]   exclude C(connection) D(data) M(multicast) S(settings) V(server) reports
+  -y, --reportstyle C      report as a Comma-Separated Values
+  -h, --help               print this message and quit
+  -v, --version            print version information and quit
+
+[KM] Indicates options that support a K or M suffix for kilo- or mega-
+```
 
 ## <a name="ref">អត្ថបទយោង</a>
 
