@@ -58,7 +58,9 @@ or
 ```
 iperf --server
 ```
+![iperf server](https://imgur.com/oORQ3T8)
 
+ចំពោះករណីខាងលើ iPerfស្ដាប់ port 5001 ជាកំណត់។ ហើយយើងអាចកំណត់portបានដោយប្រើប៉ារ៉ាម៉ែត្រ -p ឫ --port។
 
 
 ## <a name="ref">អត្ថបទយោង</a>
